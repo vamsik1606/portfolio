@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">V D V Vamsi Krishna N</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Data Scientist & AI Engineer</h1>
+                <p class="hero-subtitle">Turning data into actionable insights and building intelligent systems</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate Data Scientist and AI Engineer with expertise in data analysis, machine learning, and building intelligent systems. I love solving complex problems and creating data-driven solutions.</p>
+                    <p>My skills span across:</p>
+                    <ul class="skills-list">
+                        <li>Data Analysis & Visualization</li>
+                        <li>Machine Learning & Deep Learning</li>
+                        <li>Data Engineering & Pipelines</li>
+                        <li>Generative AI & LLMs</li>
+                        <li>Agentic AI Systems</li>
+                    </ul>
+                </div>
+                <div class="about-skills">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-grid">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Apache Spark</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">LangChain</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Portfolio Projects</h2>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="data-analysis">Data Analysis</button>
+                <button class="filter-btn" data-filter="data-engineering">Data Engineering</button>
+                <button class="filter-btn" data-filter="data-science">Data Science</button>
+                <button class="filter-btn" data-filter="generative-ai">Generative AI</button>
+                <button class="filter-btn" data-filter="agentic-ai">Agentic AI</button>
+                <button class="filter-btn" data-filter="neural-networks">Neural Networks</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                
+                <!-- Project Card Template - You'll add more as you complete projects -->
+                <div class="project-card" data-category="data-analysis">
+                    <div class="project-image">
+                        <div class="project-placeholder">Project Image</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Customer Segmentation & RFM Analysis</h3>
+                        <p class="project-description">
+                            Analyzed e-commerce transaction data to segment customers using RFM metrics. 
+                            Built interactive dashboards showing customer lifetime value and churn prediction.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">Plotly</span>
+                            <span class="tag">Scikit-learn</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">GitHub</a>
+                            <a href="#" class="project-link">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more project cards as you complete them -->
+                <div class="project-card" data-category="data-analysis">
+                    <div class="project-image">
+                        <div class="project-placeholder">Coming Soon</div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sales Forecasting with Time Series</h3>
+                        <p class="project-description">
+                            Time series forecasting using ARIMA, Prophet, and LSTM models with seasonality analysis.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Prophet</span>
+                            <span class="tag">LSTM</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">Coming Soon</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p>I'm always open to discussing new projects, opportunities, or collaborations.</p>
+                <div class="contact-links">
+                    <a href="mailto:vamsik1923@gmail.com" class="contact-link">
+                        <span>📧</span> vamsik1923@gmail.com 
+                    </a>
+                    <a href="https://github.com/vamsik1606" class="contact-link">
+                        <span>💻</span> GitHub-Vamsi
+                    </a>
+                    <a href="https://www.linkedin.com/in/v-d-v-vamsi-krishna/" class="contact-link">
+                        <span>💼</span> LinkedIn-Vamsi
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Vamsi Krishna. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
