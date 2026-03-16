@@ -70,3 +70,66 @@ document.querySelectorAll('.project-card').forEach(card => {
     card.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
     observer.observe(card);
 });
+
+// Tic Zack Toe Game
+
+const cells = document.querySelectorAll(".cell");
+const statusText = document.getElementById("gameStatus");
+const resetButton = document.getElementById("resetGame");
+
+let currentPlayer = "X";
+let gameState = Array(12).fill("");
+
+// Z pattern positions
+const winPattern = [0,1,2,4,6,7,8];
+
+cells.forEach(cell => {
+    cell.addEventListener("click", () => {
+
+        const index = cell.getAttribute("data-index");
+
+        if(gameState[index] !== "") return;
+
+        gameState[index] = currentPlayer;
+        cell.textContent = currentPlayer;
+
+        checkWin();
+
+        currentPlayer = currentPlayer === "X" ? "O" : "X";
+
+    });
+});
+
+function checkWin(){
+
+    const first = gameState[winPattern[0]];
+
+    if(first === "") return;
+
+    const win = winPattern.every(i => gameState[i] === first);
+
+    if(win){
+
+        statusText.textContent = first + " wins with the Z pattern!";
+
+        winPattern.forEach(i => {
+            cells[i].classList.add("win");
+        });
+
+        cells.forEach(cell => cell.style.pointerEvents = "none");
+    }
+}
+
+resetButton.addEventListener("click", () => {
+
+    gameState = Array(12).fill("");
+    currentPlayer = "X";
+    statusText.textContent = "";
+
+    cells.forEach(cell => {
+        cell.textContent = "";
+        cell.classList.remove("win");
+        cell.style.pointerEvents = "auto";
+    });
+
+});
